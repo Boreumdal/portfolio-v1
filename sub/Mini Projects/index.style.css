@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@700&family=Lato:wght@100;300;400;700&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    min-height: 100%;
+}
+
+body {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    font-family: 'Lato', sans;
+}
+
+h1, h2, h3, h4 {
+    font-family: Amaranth, Lato, sans;
+    letter-spacing: 1.2px;
+}

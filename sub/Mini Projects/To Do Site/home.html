@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melvin - To Do</title>
+    <link rel="stylesheet" href="../index.style.css">
+    <style>
+        main {
+            padding: 30px 0;
+            width: fit-content;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        div.title {
+            padding: 30px 0;
+        }
+        div.inputs input[type='button'] {
+            width: 32px;
+            height: 32px;
+        }
+        div.inputs input[type='text'] {
+            padding: 6px 12px;
+        }
+        div.results {
+            padding: 20px 0;
+            width: 100%;
+        }
+        div.inputs p {
+            background-color: rgb(241, 89, 89);
+            padding: 7px 4px;
+            margin-top: 2px;
+            visibility: hidden;
+            font-size: 13px;
+        }
+        div.results div.todoitem {
+            margin: 8px 0;
+            background-color: white;
+            color: black;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4px 0;
+            cursor: pointer;
+        }
+        div.results div.todoitem p {
+            display: block;
+            padding: 2px 10px ;
+            min-width: 80%;
+        }
+        div.results div.todoitem div.todoaction {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 19%;
+        }
+        div.results div.todoitem div.todoaction button {
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="title">
+            <h2>To Do Mini Program</h2>
+        </div>
+        <div class="inputs">
+            <input type="text" id="todoinput" placeholder="To Do">
+            <input type="button" value="+" id="todoadd">
+            <p class="error">aa</p>
+        </div>
+        <div class="results">
+            <!-- sample item
+            <div class="todoitem">
+                <p>asfasd</p>
+                <div class="todoaction">
+                    <button id="tododel">Del</button>
+                </div>
+            </div> 
+            -->
+        </div>
+    </main>
+    <script src="home-todo.js"></script>
+</body>
+</html>
